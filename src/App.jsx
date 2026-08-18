@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { supabase } from "./lib/supabaseClient.js";
 import AuthScreen from "./components/AuthScreen.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -9,6 +9,7 @@ import HomePage from "./components/HomePage.jsx";
 import MenuPage from "./components/MenuPage.jsx";
 import AboutPage from "./components/AboutPage.jsx";
 import ContactPage from "./components/ContactPage.jsx";
+import Admin from "./components/Admin.jsx";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -150,15 +151,18 @@ function App() {
         onLogout={handleLogout}
       />
 
-      {/* Routes picks ONE of these to render, based on the current URL —
-          this is what replaces the old "stack every section on one page"
-          layout with real, separate pages. */}
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage onAddToCart={addToCart} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route
+            path="/admin"
+            element={
+              user.role === "admin" ? <Admin /> : <Navigate to="/" replace />
+            }
+          />
         </Routes>
       </main>
 
