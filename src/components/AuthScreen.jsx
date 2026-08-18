@@ -81,7 +81,7 @@ function AuthScreen() {
           <h1>
             Bean.Cafe
             <br />
-            Coffee Roasters
+            Coffee
           </h1>
           <p className="auth-screen__tagline">
             Log in to browse the menu, save your order history, and pick up
