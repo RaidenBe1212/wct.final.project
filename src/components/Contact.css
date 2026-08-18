@@ -1,0 +1,104 @@
+.contact {
+  padding: 88px 0;
+  background-color: var(--espresso-soft);
+  border-top: 1px solid rgba(201, 151, 76, 0.15);
+}
+
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+.contact__address {
+  color: var(--cream-dim);
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.contact__hours {
+  list-style: none;
+  border-top: 1px solid rgba(243, 233, 220, 0.15);
+  max-width: 320px;
+}
+
+.contact__hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(243, 233, 220, 0.15);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+}
+
+.contact__form-wrap {
+  background-color: var(--espresso);
+  border: 1px solid rgba(201, 151, 76, 0.2);
+  border-radius: var(--radius);
+  padding: 32px;
+  align-self: start;
+}
+
+.contact__form-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 8px 0 20px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact__form label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cream-dim);
+}
+
+.contact__form input {
+  background-color: var(--espresso-soft);
+  border: 1px solid rgba(243, 233, 220, 0.25);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  color: var(--cream);
+  font-family: var(--font-body);
+  margin-bottom: 14px;
+}
+
+.contact__form input:focus {
+  border-color: var(--amber);
+}
+
+.contact__form button {
+  background-color: var(--rust);
+  color: var(--cream);
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.contact__form button:hover {
+  background-color: #8f3a26;
+}
+
+.contact__success {
+  color: var(--sage);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 780px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+}

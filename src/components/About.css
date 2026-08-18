@@ -1,0 +1,31 @@
+.about {
+  padding: 88px 0;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.about__art svg {
+  width: 100%;
+  height: auto;
+}
+
+.about__body {
+  color: var(--cream-dim);
+  max-width: 60ch;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 780px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+  .about__art {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
