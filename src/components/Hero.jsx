@@ -15,9 +15,6 @@ function Hero() {
             Bean.Cafe is a neighborhood coffee. Come sit at our coffee shop, and
             taste the difference in flavor.
           </p>
-          <a className="hero__cta" href="#menu">
-            See the menu
-          </a>
         </div>
 
         {/* The stamp / seal — our signature visual element */}

@@ -16,11 +16,11 @@ function Home() {
             <p>Browse every coffee we're pouring today.</p>
           </Link>
           <Link to="/about" className="home-links__card">
-            <h3>Our Story</h3>
+            <h3>About Us</h3>
             <p>How Bean.Cafe got started, and what we believe in.</p>
           </Link>
           <Link to="/contact" className="home-links__card">
-            <h3>Visit Us</h3>
+            <h3>Contact Us</h3>
             <p>Hours, location, and how to get in touch.</p>
           </Link>
         </div>

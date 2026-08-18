@@ -23,6 +23,8 @@ function Contact() {
           <p className="section-eyebrow">Visit us</p>
           <h2 className="section-title">Come sit at our coffee shop</h2>
           <p className="contact__address">PreakThmei, Kohthom, Kandal</p>
+          <p className="contact__number">0716 81 31 71</p>
+          <p className="contact__gmail">Vathanak12000@gmail.com</p>
 
           <ul className="contact__hours">
             {hours.map((row) => (
